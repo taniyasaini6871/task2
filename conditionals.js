@@ -12,7 +12,6 @@ function firstRepeat(name){
       }
     }
   }
-
   return "-1 not repeated";
 }
 console.log(firstRepeat("Isilduri"));
@@ -30,9 +29,9 @@ console.log(firstRepeat("Isilduri"));
       console.log(numStr, "is not a Palindrome")
     }
   };
-
+     
  checkPalindrome(5);
- checkPalindrome(1271);
+ checkPalindrome('tet');
 
 //  3Q. JavaScript Program to Check Whether a Number is Armstrong or Not? Using operators
 
@@ -60,7 +59,7 @@ console.log(firstRepeat("Isilduri"));
 value is defined (not undefined) and has a truthy value. If it does, 
 store the result in a variable 'isValid'.*/
 
- const isValid = (typeof 6 !== "undefined" && 6)  ? true : false;
+ const isValid = (typeof test !== undefined && 6)  ? true : false;
   console.log(isValid);
   
 
@@ -80,7 +79,7 @@ store the result in a variable 'isValid'.*/
       }
   }
   
-  swapValue(2,4);
+  swapValue(14,20);
 
 
   /*6Q. Write a function that checks if a given year is a leap year 
@@ -97,3 +96,18 @@ function checkLeapYear(year){
 
 checkLeapYear(2018);
 checkLeapYear(2020);
+
+//   3 fizz , 5 -buzz , 3 or 5 - fizzbuzz
+
+function multiple(num){
+   if(num % 3 === 0 && num % 5 === 0){
+    console.log("fizzbuzz");
+   }
+   else if (num % 3 === 0) {
+    console.log("fizz");
+   } else if (num % 5 === 0) {
+    console.log("buzz");
+   }
+};
+
+multiple(15);
